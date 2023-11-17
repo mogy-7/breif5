@@ -52,6 +52,7 @@ $clientsResult = $conx->query($fetchClientsQuery);
                 <th>dateNaissance</th>
                 <th>nationality</th>
                 <th>genre</th>
+                <th>acounts</th>
             </tr>
             <tbody>
                 <?php 
@@ -64,6 +65,7 @@ $clientsResult = $conx->query($fetchClientsQuery);
                         echo '<td>' . $client['birth_date'] . '</td>';
                         echo '<td>' . $client['nationality'] . '</td>';
                         echo '<td>' . $client['gender'] . '</td>';
+                        echo '<td><a href="acount.php?id=' . $client['id'] .'" >Acounts</a></a></td>';
                     echo '</tr>';
                     }
                 }

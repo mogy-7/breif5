@@ -68,18 +68,56 @@
 
     $insertAccountsData = "
         INSERT INTO accounts (balance, currency, client_id) 
-        VALUES  (608, 'Mad', 3);
-                
+        VALUES  (608, 'Mad', 1),
+                (608, 'Mad', 1),
+                (948, 'Mad', 2),
+                (948, 'Mad', 2),
+                (548, 'Mad',3),
+                (548, 'Mad',3),
+                (634, 'Mad', 4),
+                (634, 'Mad', 4),
+                (839, 'Mad', 5),   
+                (839, 'Mad', 5);   
     ";
 
     $insertTransactionsData = "
         INSERT INTO transactions (account_id, type, amount) 
-        VALUES  (1, 'credit', 7800);
-                
+        VALUES  (32, 'credit', 7800),
+                (33, 'debit', 7800),
+                (34, 'debit', 7800),
+                (35, 'debit', 7800),
+                (36, 'debit', 7800),
+                (37, 'debit', 7800),
+                (38, 'debit', 7800),
+                (39, 'debit', 7800),
+                (40, 'debit', 7800),
+                (41, 'debit', 7800),
+                (32, 'credit', 7800),
+                (33, 'debit', 7800),
+                (34, 'debit', 7800),
+                (35, 'debit', 7800),
+                (36, 'debit', 7800),
+                (37, 'debit', 7800),
+                (38, 'debit', 7800),
+                (39, 'debit', 7800),
+                (40, 'debit', 7800),
+                (41, 'debit', 7800),
+                (32, 'credit', 7800),
+                (33, 'debit', 7800),
+                (34, 'debit', 7800),
+                (35, 'debit', 7800),
+                (36, 'debit', 7800),
+                (37, 'debit', 7800),
+                (38, 'debit', 7800),
+                (39, 'debit', 7800),
+                (40, 'debit', 7800),
+                (41, 'debit', 7800);               
+        
+
     ";
 
-    // $conx->query($insertClientsData);
+    // // $conx->query($insertClientsData);
     // $conx->query($insertAccountsData);
-    // $conx->query($insertTransactionsData);
+    $conx->query($insertTransactionsData);
 
 ?>
