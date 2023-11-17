@@ -118,6 +118,6 @@
 
     // // $conx->query($insertClientsData);
     // $conx->query($insertAccountsData);
-    $conx->query($insertTransactionsData);
+    // $conx->query($insertTransactionsData);
 
 ?>
